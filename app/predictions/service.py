@@ -106,9 +106,9 @@ class PredictionService:
         min_index_in_sublist = sub_list.index(min_value)
         min_index_in_original_list = 12 + min_index_in_sublist
 
-        entry_price = real[12]
-        best_price = real[min_index_in_original_list]
-        exit_price = real[24]
+        entry_price = round(real[12], 4)
+        best_price = round(real[min_index_in_original_list], 4)
+        exit_price = round(real[24], 4)
 
         response = {
             "datetime": datetime_5m,
